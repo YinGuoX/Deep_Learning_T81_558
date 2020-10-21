@@ -2,7 +2,7 @@
 * 主要来自Jeff_Heanton的Washington University (in St. Louis) Course T81-558: Applications of Deep Neural Networks
 * 原代码、文本可直接到GitHub上寻找，或通过Part1.1页面中的链接也可。
 ***
-## 1.Part1：Python基础与文件读取
+## 1. Part1 : Python基础与文件读取
 * Part1.1 : 课程概览
 * Part1.2 : Python介绍
   * 如何确保使用的TensorFlow版本、判断是否正在使用CoLab
@@ -31,7 +31,7 @@
   * lambda : 一个匿名函数，可自己百度语法
   * reduce():输入一个函数和一个列表，用传给 reduce() 中的函数 function（有两个参数）先对集合中的第 1、2 个元素进行操作，得到的结果再与第三个数据用 function 函数运算，最后得到一个结果。
 
-## 2. Part2
+## 2. Part2 : Pandas处理数据、提取特征
 * Part2.1 : Pandas介绍
   * 加载数据:pd.read_csv()
   * 处理数据:
@@ -57,3 +57,20 @@
   * df[].map(dict):一般是针对df中某一列的数据进行映射到map中dict的value
   * df.apply(function,axis):针对df的全部数据的每一行或每一列输入到function中进行计算，并且返回新的df
   * 在特征工程中使用map(),apply():一个csv文件处理获得新特征的例子
+* Part2.5 : 特征工程的实例
+  * 重量单位的转换
+  * 地区经纬度及其距离计算(使用的是Google的API，未实现)
+
+## 3. Part3:
+* Part3.1 : 神经网络与深度学习的介绍
+  * 分类和回归模型
+  * 神经元和层
+  * 神经元、层的类型
+    * 输入、隐藏、输出、上下文、偏置神经元
+    * 输入、输出、隐藏层
+  * 为什么需要偏置神经元:思考有偏置、无偏置激活函数的区别！(简单画图即可明了)
+  * 现代激活函数：
+    * ReLu、Softmax、Linear
+  * 经典激活函数:
+    * Step、Sigmoid、Hyperbolic Tangent
+  * 为什么ReLu更有效:考虑导数变化的区别！
